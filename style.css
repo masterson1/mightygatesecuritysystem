@@ -1,0 +1,157 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styling */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #111; /* black background */
+    color: #f0f0f0; /* light text for contrast */
+    padding: 20px;
+  }
+  
+  /* Header styling */
+  header {
+    background-color: #ff6600; /* vibrant orange */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header img {
+    display: block;
+    margin: 0 auto 10px;
+    height: 100px;
+  }
+  
+  /* Navigation links */
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Main section */
+  main {
+    margin-top: 20px;
+  }
+  
+  /* Section styling */
+  section {
+    background: #1a1a1a; /* dark gray for sections */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+  
+  /* Footer styling */
+  footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #ff6600;
+    color: #fff;
+    border-radius: 5px;
+  }
+  form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 4px;
+  background-color: #333;
+  color: #fff;
+}
+
+form button {
+  background-color: #ff6600;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+form button:hover {
+  background-color: #e65c00;
+}
+/* Responsive styles for small screens */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  header {
+    text-align: center;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  section {
+    padding: 15px;
+  }
+
+  form input,
+  form textarea {
+    font-size: 16px;
+  }
+
+  form button {
+    width: 100%;
+  }
+}
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    margin: 0 auto;
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+    background-color: #222;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  nav a {
+    padding: 10px 0;
+    border-bottom: 1px solid #444;
+  }
+
+  nav a:last-child {
+    border-bottom: none;
+  }
+}
